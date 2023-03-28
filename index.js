@@ -8,6 +8,11 @@ app.get('/',(req,res) => {
     })
 })
 
+app.get('/contac', (req, res) => {
+    res.sendFile('contacto.html', {
+         root: __dirname });
+});
+  
 app.use(express.static('css'));
 app.use(express.static('js'));
 app.use(express.static('font-awesome'));
