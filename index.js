@@ -19,6 +19,12 @@ app.get('/catalogo',(req,res) => {
     })
 });
   
+app.get('/nosotros',(req,res) => {
+    res.sendFile('nosotros.html',{
+        root: __dirname
+    })
+});
+
 app.use(express.static('css'));
 app.use(express.static('js'));
 app.use(express.static('font-awesome'));
