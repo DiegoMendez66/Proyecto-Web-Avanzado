@@ -12,6 +12,12 @@ app.get('/contacto', (req, res) => {
     res.sendFile('contacto.html', {
          root: __dirname });
 });
+
+app.get('/catalogo',(req,res) => {
+    res.sendFile('catalogo.html',{
+        root: __dirname
+    })
+});
   
 app.use(express.static('css'));
 app.use(express.static('js'));
