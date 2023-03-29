@@ -8,7 +8,7 @@ app.get('/',(req,res) => {
     })
 })
 
-app.get('/contac', (req, res) => {
+app.get('/contacto', (req, res) => {
     res.sendFile('contacto.html', {
          root: __dirname });
 });

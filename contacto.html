@@ -4,9 +4,248 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACME</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link href="/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="/animate.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    
+    <title>Contactanos</title>
 </head>
 <body>
-    <h1>PAGINA DE CONTACTANOS</h1>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                        <img alt="image" class="img-circle" src="/profile_small.jpg" />
+                         </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                         </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Inicio</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="nosotros.html"><i class="fa fa-users"></i> <span class="nav-label">Nosotros</span></a>
+                </li>
+                <li>
+                    <a href="catalogo.html"><i class="fa fa-tags"></i> <span class="nav-label">Catálogo</span></a>
+                </li>
+                <li>
+                    <a href="/contac"><i class="fa fa-phone"></i> <span class="nav-label">Contáctanos</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="graph_flot.html">Flot Charts</a></li>
+                        <li><a href="graph_morris.html">Morris.js Charts</a></li>
+                        <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
+                        <li><a href="graph_chartjs.html">Chart.js</a></li>
+                        <li><a href="graph_chartist.html">Chartist</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+
+        </div>
+        </nav>
+        <h1>Contactanos</h1>
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text mb-5">
+              
+              <style>
+                .map-container-section {
+                  overflow:hidden;
+                  padding-bottom:56.25%;
+                  position:relative;
+                  height:0;
+                }
+                .map-container-section iframe {
+                  left:0;
+                  top:0;
+                  height:100%;
+                  width:100%;
+                  position:absolute;
+                }
+              </style>
+        
+              <!-- Section heading -->
+              <h3 class="font-weight-bold text-center mb-4"></h3>
+              <br>
+              <!-- Section description -->
+              <p class="text-center w-responsive mx-auto pb-5">Si tienes alguna pregunta, comentario o simplemente quieres saludarnos,
+                ¡nos encantaría escucharte! Puedes ponerte en contacto con nosotros a través del formulario de contacto que encontrarás 
+                a continuación o enviarnos un correo electrónico directamente a nuestra dirección de correo electrónico. ¡Estaremos 
+                encantados de ayudarte en lo que necesites!</p>
+                <br>
+        
+              <!-- Grid row -->
+              <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+        
+                  <!-- Form with header -->
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- Header -->
+                      <div class="form-header blue accent-1">
+                        <h3 class="mt-2"></i> Coloca tus datos</h3>
+                      </div>
+                      <p class="dark-grey-text">Tu nombre</p>
+                      <!-- Body -->
+                      <div class="md-form">
+                        <i class=""></i>
+                        <input type="text" id="form-name" class="form-control">
+                        <label for="form-name">Tu apellido</label>
+                      </div>
+                      <div class="md-form">
+                        <i class=""></i>
+                        <input type="text" id="form-email" class="form-control">
+                        <label for="form-email">Tu correo</label>
+                      </div>
+                      <div class="md-form">
+                        <i class=""></i>
+                        <input type="text" id="form-Subject" class="form-control">
+                        <label for="form-Subject">comentario</label>
+                      </div>
+                      <div class="md-form">
+                        <i class=""></i>
+                        <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                        <label for="form-text">Send message</label>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-light-blue">enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Form with header -->
+        
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-lg-7">
+        
+                  <!--Google map-->
+                  <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9905958055074!2d-76.95738347763604!3d-12.04416776418259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c68826cec0c3%3A0xf6df8bcd4e0a5fcf!2sTecsup%20-%20Santa%20Anita!5e0!3m2!1ses!2spe!4v1680038450143!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <!-- Buttons-->
+                  <div class="row text-center">
+                    <div class="col-md-4">
+                      <a class="btn-floating blue accent-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </a>
+                      <p>New York, 94126</p>
+                      <p class="mb-md-0">United States</p>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="btn-floating blue accent-1">
+                        <i class="fas fa-phone"></i>
+                      </a>
+                      <p>+ 01 234 567 89</p>
+                      <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="btn-floating blue accent-1">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <p>info@gmail.com</p>
+                      <p class="mb-0">sale@gmail.com</p>
+                    </div>
+                  </div>
+        
+                </div>
+                <!-- Grid column -->
+        
+              </div>
+              <!-- Grid row -->
+        
+            </section>
+            <!--Section: Content-->
+          </div>
+    </div>
+
+<br>
+
+       <!-- Mainly scripts -->
+       <script src="/jquery-2.1.1.js"></script>
+       <script src="/bootstrap.min.js"></script>
+       <script src="/plugins/metisMenu/jquery.metisMenu.js"></script>
+       <script src="/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+       <!-- Flot -->
+       <script src="/plugins/flot/jquery.flot.js"></script>
+       <script src="/plugins/flot/jquery.flot.tooltip.min.js"></script>
+       <script src="/plugins/flot/jquery.flot.spline.js"></script>
+       <script src="/plugins/flot/jquery.flot.resize.js"></script>
+       <script src="/plugins/flot/jquery.flot.pie.js"></script>
+
+       <!-- Peity -->
+       <script src="/plugins/peity/jquery.peity.min.js"></script>
+       <script src="/demo/peity-demo.js"></script>
+
+       <!-- Custom and plugin javascript -->
+       <script src="/inspinia.js"></script>
+       <script src="/plugins/pace/pace.min.js"></script>
+
+       <!-- jQuery UI -->
+       <script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+       <!-- GITTER -->
+       <script src="/plugins/gritter/jquery.gritter.min.js"></script>
+
+       <!-- Sparkline -->
+       <script src="/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+       <!-- Sparkline demo data  -->
+       <script src="/demo/sparkline-demo.js"></script>
+
+       <!-- ChartJS-->
+       <script src="/plugins/chartJs/Chart.min.js"></script>
+
+       <!-- Toastr -->
+       <script src="/plugins/toastr/toastr.min.js"></script>
+
+       <!-- seccion nav -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
